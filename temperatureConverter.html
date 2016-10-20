@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+
+</head>
+
+<script>
+
+    function convert(degree) {
+
+        var temp;
+        if (degree == 'C') {
+            temp = document.getElementById('c').value * 9/5 + 32;
+            document.getElementById('f').value = Math.round (temp);
+
+        }
+        else {
+            temp = (document.getElementById ('f').value -32) * 5/9;
+            document.getElementById('c').value = Math.round (temp);
+        }
+
+
+    }
+
+
+
+
+
+</script>
+
+<style type="text/css">
+    html {
+        font: 90%/2 petite-caps,Courier New Bold;
+        padding:4em;
+        margin:1em;
+
+    }
+    body {
+        background-color: #009999;
+    }
+    fieldset
+    {   border-style: solid;
+        border-width:7px;
+        border-color: #f6f6f6;
+        text-align: center;
+
+    }
+    h1
+    { color: white;
+      text-align: center;
+        font-size: 50px;
+        font-style: New Bold ;
+    }
+    h2
+    {
+        color: lightpink;
+    }
+    h3
+    {
+        color: white;
+        font-size: 30px;
+    }
+    h4
+    {
+        color: white;
+        font-style: normal;
+        font-size: 25px;
+    }
+    h5
+     {
+        color: white;
+        font-style: normal;
+        font-size: 25px;
+     }
+
+
+
+</style>
+
+<body>
+<fieldset>
+<h1>JavaScript Celsius to Fahrenheit</h1>
+
+
+
+<fieldset>
+<h2>Insert a number into one of the input fields below:</h2>
+</fieldset>
+
+
+<h4><input id="c" onkeyup="convert('C')"> Degrees Celsius</h4>
+<p><h3>Equals</h3></p>
+
+<h5><input id="f" onkeyup="convert('F')"> Degrees Fahrenheit</h5>
+
+
+
+
+
+<img src="Img/flowers.jpg"
+height="400"
+width="350"
+>
+
+<img src="Img/photo2.jpg"
+     height="400"
+     width="350"
+>
+    <img src="Img/photo3.jpg"
+         height="400"
+         width="350"
+>
+
+</fieldset>
+
+
+
+</body>
+</html>
+
